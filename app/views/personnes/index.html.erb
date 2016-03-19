@@ -5,9 +5,9 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Nom</th>
+      <th>Prenom</th>
       <th>Statut</th>
-      <th>Datedenaissance</th>
+      <th>Date de naissance</th>
       <th>Famille</th>
       <th colspan="3"></th>
     </tr>
@@ -16,13 +16,13 @@
   <tbody>
     <% @personnes.each do |personne| %>
       <tr>
-        <td><%= personne.nom %></td>
+        <td><%= personne.prenom %></td>
         <td><%= personne.statut %></td>
         <td><%= personne.datedenaissance %></td>
         <td><%= personne.famille %></td>
-        <td><%= link_to 'Show', personne %></td>
-        <td><%= link_to 'Edit', edit_personne_path(personne) %></td>
-        <td><%= link_to 'Destroy', personne, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Afficher', personne %></td>
+        <td><%= link_to 'Editer', edit_personne_path(personne) %></td>
+        <td><%= link_to 'Effacer', personne, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
