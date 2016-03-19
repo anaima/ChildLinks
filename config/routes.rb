@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :personnes
+    resources :familles
+
+    root to: "personnes#index"
+  end
+
+  devise_for :personnes
   resources :personnes
   resources :familles
   # The priority is based upon order of creation: first created -> highest priority.

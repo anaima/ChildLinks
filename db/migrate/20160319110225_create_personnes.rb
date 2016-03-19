@@ -3,7 +3,7 @@ class CreatePersonnes < ActiveRecord::Migration
     create_table :personnes do |t|
       t.string :nom
       t.string :statut
-      t.DateTime :datedenaissance
+      t.datetime :datedenaissance
       t.references :famille, index: true, foreign_key: true
 
       t.timestamps null: false
