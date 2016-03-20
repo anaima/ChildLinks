@@ -14,6 +14,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+body {
+  margin: 0;
+}
  //////////////////////////   NAVBAR  ///////////////////////////////////:
 
 
@@ -35,19 +38,28 @@
 
  .navbar-nav li a:hover {
      color: #C9628D !important;
- }  //////////////////////////////   /NAVBAR ///////////////////////////////
+ }
+#myNavbar {
+  margin-top: 1%;
+  margin-left: 15%;
+}
+
+ //////////////////////////////   /NAVBAR ///////////////////////////////
 
  //////////////////////////// FOOTER  //////////////////////////////////////
  .last_footer {
-     background-color: #FFF8ED ;
+
+     background-color: #FFF8ED;
      color: black;
      height: 100px;
      text-align: center;
  }
- .text_footer {
+
+.text_footer {
   margin-top: 5%;
   font-family: cursive;
- }
+}
+  ///////////////////////     /FOOTER ///////////////////////////////////
  h1 {
    text-align: center;
  }
