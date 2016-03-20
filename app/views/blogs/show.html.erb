@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row thumbnail">
+      <p id="notice"><%= notice %></p>
+
+      <div class="col-sm-4">
+        <p>
+          <%= image_tag(@blog.picture_url, class: "picture") if @blog.picture.present? %>
+        </p>
+      </div>
+      <div class="col-sm-8">
+        <p>
+          <strong>Message:</strong>
+          <%= @blog.post %>
+        </p>
+
+        <p>
+          <strong>Contenu:</strong>
+          <%= @blog.contenu %>
+        </p>
+      </div>
+
+    <%= link_to 'Modifier', edit_blog_path(@blog) %> |
+    <%= link_to 'Retour', blogs_path %>
+</div>
+</div>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div class="container blog">
+  <%= image_tag("slide5.jpg", height: '400', width:'1170', alt: "jeune fille")%>
+
+    <h1>Mon univers</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Message</th>
+          <th>Contenu</th>
+          <th>Image</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @blogs.each do |blog| %>
+          <tr>
+            <td><%= blog.post %></td>
+            <td><%= blog.contenu %></td>
+            <td>
+              <%= image_tag(blog.picture_url, size: "100x100") if blog.picture.present? %></td>
+            <td><%= link_to 'Afficher', blog %></td>
+            <td><%= link_to 'Modifier', edit_blog_path(blog) %></td>
+            <td><%= link_to 'Supprimer', blog, method: :delete, data: { confirm: 'Confirmer la suppression?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'Nouveau post', new_blog_path %>
+</div>
