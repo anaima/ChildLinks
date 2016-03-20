@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   get 'index' =>  'pages#index'
 
   get 'blog' => 'pages#blog'
