@@ -9,17 +9,17 @@
       </div>
       <div class="col-sm-8">
         <p>
-          <strong>Message:</strong>
+          <strong>Titre:</strong>
           <%= @blog.post %>
         </p>
 
         <p>
-          <strong>Contenu:</strong>
+          <strong>Message:</strong>
           <%= @blog.contenu %>
         </p>
       </div>
 
-    <%= link_to 'Modifier', edit_blog_path(@blog) %> |
-    <%= link_to 'Retour', blogs_path %>
+    <%= link_to 'Modifier', edit_blog_path(@blog),class: "btn btn-warning btn-xs" %> |
+    <%= link_to 'Retour', blogs_path , class: "btn btn-warning btn-xs" %>
 </div>
 </div>
