@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :blogs
+
   get 'index' =>  'pages#index'
 
-  get 'blog' => 'pages#blog'
+  # get 'blog' => 'pages#blog'
 
   get 'forum' => 'pages#forum'
 
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :personnes
     resources :familles
+    resources :blogs
 
     root to: "personnes#index"
   end
