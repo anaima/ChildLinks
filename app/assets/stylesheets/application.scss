@@ -39,6 +39,7 @@ body {
  .navbar-nav li a:hover {
      color: #C9628D !important;
  }
+
 #myNavbar {
   margin-top: 1%;
   margin-left: 15%;
@@ -71,3 +72,9 @@ body {
  /////////////////////////// BLOG ///////////////////////////////////////
  table, td, th { vertical-align: middle; border: none; }
  th { border-bottom: 1px solid #DDD; }
+
+.picture {
+  max-width: 300px;
+  max-height: auto;
+  border: 1px solid #FFF8ED;
+}
