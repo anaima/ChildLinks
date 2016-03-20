@@ -31,14 +31,26 @@ body {
 
  .navbar-nav li a:hover {
      color: #C9628D !important;
- }  //////////////////////////////   /NAVBAR ///////////////////////////////
+ }
+#myNavbar {
+  margin-top: 1%;
+  margin-left: 15%;
+}
+
+ //////////////////////////////   /NAVBAR ///////////////////////////////
 
  //////////////////////////// FOOTER  //////////////////////////////////////
- .footer {
-     background-color: #DEF9FF;
-     color: #ffffff;
-     height: 120px;
- }  ///////////////////////     /FOOTER ///////////////////////////////////
+ .last_footer {
+     background-color: #FFF8ED;
+     color: black;
+     height: 100px;
+     text-align: center;
+ }
+.text_footer {
+  margin-top: 5%;
+  font-family: cursive;
+}
+  ///////////////////////     /FOOTER ///////////////////////////////////
 
  h1 {
    text-align: center;
