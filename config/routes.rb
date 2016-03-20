@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  get 'index' =>  'pages#index'
+
+  get 'blog' => 'pages#blog'
+
+  get 'forum' => 'pages#forum'
+
+  get 'vie_scolaire' => 'pages#vie_scolaire'
+
+  get 'vie_exscolaire' => 'pages#vie_exscolaire'
+
+  get 'carnet_medical' => 'pages#carnet_medical'
+
+  get 'contactez-moi'  => 'pages#contact', as: :contact
+
+  get 'compte' => 'pages#compte'
+
+  get 'finance_enf' => 'pages#compte'
+
+
+
   namespace :admin do
     resources :personnes
     resources :familles
@@ -13,7 +33,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'familles#index'
+  root 'pages#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
